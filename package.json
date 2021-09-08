@@ -1,0 +1,41 @@
+{
+  "name": "@chronotruck/vue-icu",
+  "version": "1.0.0",
+  "description": "ICU plugin for VueJS",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chronotruck/vue-icu.git"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "lint": "eslint lib",
+    "test": "jest"
+  },
+  "files": [
+    "/dist"
+  ],
+  "author": "William DA SILVA <william.da.silva@chronotruck.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vue/composition-api": "^1.1.4",
+    "messageformat": "^2.3.0",
+    "messageformat-parser": "^4.1.3",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.4",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "@vue/test-utils": "^1.2.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "eslint": "^7.32.0",
+    "jest": "^27.1.1",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2",
+    "vue-jest": "^3.0.7",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
