@@ -1,10 +1,9 @@
-import { defineComponent } from '@vue/composition-api'
 import { ComponentOptions } from 'vue'
 
 import VueICU from './index'
 
-export default defineComponent({
-  beforeCreate () {
+export default {
+  beforeCreate (): void {
     // eslint-disable-next-line @typescript-eslint/no-this-alias
     const self = this as Vue & {
       _icu?: VueICU
@@ -35,7 +34,7 @@ export default defineComponent({
       self._icu = options.parent.$icu
     }
   },
-  beforeDestroy () {
+  beforeDestroy (): void {
     if (!this._icu) { return }
 
     // eslint-disable-next-line @typescript-eslint/no-this-alias
@@ -48,4 +47,4 @@ export default defineComponent({
       self._icu = null
     })
   }
-})
+}

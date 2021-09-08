@@ -4,9 +4,10 @@ import VueICU from './index'
 
 export default (Vue: VueConstructor): void => {
   if (('$icu' in Vue.prototype)) {
+    const icu = Vue.prototype.$icu
     Object.defineProperty(Vue.prototype, '$icu', {
       get () {
-        return this._icu
+        return icu
       }
     })
   }

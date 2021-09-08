@@ -1,4 +1,4 @@
-import VueICU from './../lib/index'
+import VueICU from '@Lib/index'
 
 describe('Vue ICU', () => {
   describe('locale', () => {
