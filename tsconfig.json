@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "outDir": "dist",
     "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "paths": {
       "@Lib/*": ["lib/*"]

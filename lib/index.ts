@@ -32,7 +32,7 @@ export default class VueICU {
   messages: VueICUMessages
   customFormatters: VueICUCustomFormatter
 
-  install: (vue: VueConstructor) => void
+  install: (vue: VueConstructor, options: VueICUOptions) => void
 
   constructor (options: VueICUOptions) {
     this._locale = options.locale || 'en'

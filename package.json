@@ -2,17 +2,18 @@
   "name": "@chronotruck/vue-icu",
   "version": "1.0.0",
   "description": "ICU plugin for VueJS",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/chronotruck/vue-icu.git"
   },
   "scripts": {
+    "build": "tsc --project tsconfig.json",
     "lint": "eslint lib",
     "test": "jest"
   },
   "files": [
-    "/lib"
+    "/dist"
   ],
   "author": "William DA SILVA <william.da.silva@chronotruck.com>",
   "license": "MIT",
