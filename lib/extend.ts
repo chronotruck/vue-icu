@@ -1,6 +1,6 @@
 import { VueConstructor } from 'vue'
 
-import VueICU from './index'
+import VueICU from './vue-icu'
 
 export default (Vue: VueConstructor): void => {
   if (('$icu' in Vue.prototype)) {

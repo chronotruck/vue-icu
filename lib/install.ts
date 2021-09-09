@@ -1,6 +1,6 @@
 import { VueConstructor } from 'vue'
-import VueICU, { VueICUOptions } from './index'
 
+import VueICU, { VueICUOptions } from './vue-icu'
 import component from './component'
 import extend from './extend'
 import mixin from './mixin'
