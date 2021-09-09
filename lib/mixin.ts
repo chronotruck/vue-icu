@@ -1,6 +1,6 @@
 import { ComponentOptions } from 'vue'
 
-import VueICU from './index'
+import VueICU from './vue-icu'
 
 export default {
   beforeCreate (): void {

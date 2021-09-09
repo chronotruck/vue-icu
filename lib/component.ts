@@ -1,8 +1,8 @@
 import { defineComponent } from '@vue/composition-api'
 import MessageFormat from 'messageformat'
-import { parse } from 'messageformat-parser'
+import { parse } from '@messageformat/parser'
 
-import VueICU from './index'
+import VueICU from './vue-icu'
 
 export default defineComponent({
   name: 'ICU',
@@ -44,6 +44,7 @@ export default defineComponent({
       const attributePosition = parsedMessage
         .findIndex(token => {
           if (typeof token === 'string') return false
+          if (token.type === 'content') return false
 
           const tokenTypes = ['argument', 'function']
           return tokenTypes.includes(token.type) && token.arg && token.arg === attr

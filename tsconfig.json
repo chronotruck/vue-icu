@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "dist",
     "target": "ESNext",
     "outDir": "dist",
     "moduleResolution": "node",
@@ -10,6 +12,7 @@
     }
   },
   "exclude": [
-    "tests"
+    "tests",
+    "dist"
   ]
 }
